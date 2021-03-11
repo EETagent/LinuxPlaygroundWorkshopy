@@ -1,0 +1,35 @@
+/home/eidam
+    |-- adresar1
+    |    |
+    |    |-- adresar1_1
+    |    |    |-- adresar1_1_1
+    |    |    |-- adresar1_1_2
+    |    |    |-- soubor1.txt
+    |    |
+    |    |-- adresar1_2
+    |    |    |-- soubor2.txt
+    |    |    |-- soubor3.txt
+    |    |
+    |    |-- adresar1_3
+    |    |    |-- adresar1_3_1
+    |    |    |    |-- adresar1_3_1_1
+    |    |    |    |-- adresar1_3_1_2
+    |    |    |
+    |    |    |-- soubor4.txt
+    |    |
+    |    |-- adresar1_4
+    |        |-- soubor5.txt
+    |
+    |-- adresar2
+        |-- soubor6.txt
+        |-- soubor7.txt
+
+
+adresar1_3_1_1 -> nastavte práva na: majitel vše, skupina čtení a spouštění, ostatní pouze spouštění
+soubor1.txt -> UID přihlášeného uživatele
+soubor2.txt -> output programu "print_me"
+soubor3.txt -> hostname vašeho počítače
+soubor4.txt -> obsah vzdáleného souboru http://bezpecnost.ssps.cz/www/share/Hackdays/remote.txt
+soubor5.txt -> vlajku (ve formátu "vlajka{<kód>}") ukrytou ve vzdáleném souboru http://bezpecnost.ssps.cz/www/share/Hackdays/flag.mp3
+soubor6.txt -> rozšifrovaný obsah souboru junak.txt (použijte python kód http://bezpecnost.ssps.cz/www/share/Hackdays/skaut.py)
+soubor7.txt -> ip adresa na kterou směřuje doména "bezpecnost.ssps.cz"

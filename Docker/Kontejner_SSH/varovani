@@ -1,0 +1,8 @@
+#!/bin/bash
+CERVENA="\033[0;31m"
+BEZBAREV="\033[0m"
+
+echo -en "${CERVENA}\n"
+echo -en "VAROVÁNÍ: Prosíme aby jste záměrně nepoškozovali tento server !\n\n"
+echo -en "Systém je monitorován, nelegální činnost je přísně zakázána !\n\n"
+echo -en "${BEZBAREV}"
