@@ -4,7 +4,7 @@ ENV TZ=Europe/Prague
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN apt-get update
-RUN apt-get install curl wget sudo -y
+RUN apt-get install dnsutils curl wget sudo inetutils-ping binutils -y
 
 RUN useradd -d /home/eidam/ -m -p eidam -s /bin/bash eidam
 RUN echo "eidam:eidam" | chpasswd
