@@ -7,17 +7,15 @@
     |    |-- uloha4.txt
     |    |-- uloha5.txt
     |    |-- uloha6.txt
-    |    |-- uloha7.txt
 
 
 ----------------------------------------------------
 
 uloha1.txt -> UID přihlášeného uživatele
 uloha2.txt -> Output programu "print_me"
-uloha3.txt -> Hostname vašeho počítače
-uloha4.txt -> Obsah vzdáleného souboru http://bezpecnost.ssps.cz/www/share/Hackdays/remote.txt
-uloha5.txt -> Vlajku (ve formátu "vlajka{<kód>}") ukrytou ve vzdáleném souboru http://bezpecnost.ssps.cz/www/share/Hackdays/flag.mp3
-uloha6.txt -> Rozšifrovaný obsah souboru junak.txt (použijte python kód http://bezpecnost.ssps.cz/www/share/Hackdays/skaut.py)
-uloha7.txt -> IP adresa na kterou směřuje doména "bezpecnost.ssps.cz"
+uloha3.txt -> Hostname virtuálního počítače
+uloha4.txt -> Obsah vzdáleného souboru https://kraky.ml/curl.txt
+uloha5.txt -> Vlajka (ve formátu "KBB{<kód>}") ukrytá ve vzdáleném souboru https://kraky.ml/Kalistosaurus.mp3
+uloha6.txt -> IP adresa na kterou směřuje doména "bezpecnost.ssps.cz"
 
 Poté spusťte program "ukladatko", ten Vám úlohy zkontroluje a vypíše případné chyby.

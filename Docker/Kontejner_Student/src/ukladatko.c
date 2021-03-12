@@ -54,7 +54,7 @@ int main()
   double complete = 0;
   double all = 0;
 
-  const char *files[7][256];
+  const char *files[6][256];
   files[0][0] = "cat ";
   files[0][1] = "/home/eidam/kyber/uloha1.txt";
   files[0][2] = "id -u";
@@ -69,19 +69,15 @@ int main()
 
   files[3][0] = "cat ";
   files[3][1] = "/home/eidam/kyber/uloha4.txt";
-  files[3][2] = "curl http://bezpecnost.ssps.cz/www/share/Hackdays/remote.txt";
+  files[3][2] = "echo 'KBB{cURLJ3cURL}'";
 
   files[4][0] = "cat ";
   files[4][1] = "/home/eidam/kyber/uloha5.txt";
-  files[4][2] = "echo 'vlajka{TLIWJXNCUJ}'";
+  files[4][2] = "echo 'KBB{0vlad4mStr1n5s}'";
 
   files[5][0] = "cat ";
   files[5][1] = "/home/eidam/kyber/uloha6.txt";
-  files[5][2] = "echo 'BUDPRIPRAVEN'";
-
-  files[6][0] = "cat ";
-  files[6][1] = "/home/eidam/kyber/uloha7.txt";
-  files[6][2] = "dig +short bezpecnost.ssps.cz";
+  files[5][2] = "dig +short bezpecnost.ssps.cz";
 
   int filesLength = sizeof(files) / sizeof(files[0]);
   char filecmd[1048];
