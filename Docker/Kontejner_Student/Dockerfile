@@ -10,14 +10,23 @@ RUN useradd -d /home/eidam/ -m -p eidam -s /bin/bash eidam
 RUN echo "eidam:eidam" | chpasswd
 RUN usermod -aG sudo eidam
 
-COPY checker /bin/checker
-COPY checker-navod.txt /home/eidam/README.txt
-RUN chmod +x /bin/checker
-RUN ln -s /bin/checker /home/eidam/checker
+COPY bin/kontrolka /bin/kontrolka
+COPY task/kontrolka-zadani.txt /home/eidam/README_kontrolka.txt
+RUN chmod +x /bin/kontrolka
+RUN ln -s /bin/kontrolka /home/eidam/kontrolka
 
-COPY print_me /bin/print_me
+COPY bin/ukladatko /bin/ukladatko
+COPY task/ukladatko-zadani.txt /home/eidam/README_ukladatko.txt
+RUN chmod +x /bin/ukladatko
+RUN ln -s /bin/ukladatko /home/eidam/ukladatko
+
+COPY bin/print_me /bin/print_me
 RUN chmod +x /bin/print_me
 RUN ln -s /bin/print_me /home/eidam/print_me
+
+COPY bin/neofetch /bin/neofetch
+RUN chmod +x /bin/neofetch
+RUN ln -s /bin/neofetch /home/eidam/neofetch
 
 WORKDIR /home/eidam
 USER eidam

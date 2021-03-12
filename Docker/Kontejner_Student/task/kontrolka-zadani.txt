@@ -1,0 +1,35 @@
+/home/eidam
+	|-- adresar1
+	|	|
+	|	|-- adresar1_1
+	|	|	|-- adresar1_1_1
+	|	|	|-- adresar1_1_2
+	|	|	|-- soubor1.txt
+	|	|
+	|	|-- adresar1_2
+	|	|	|-- soubor2.txt
+	|	|	|-- soubor3.txt
+	|	|
+	|	|-- adresar1_3
+	|	|	|-- adresar1_3_1
+	|	|	|	|-- adresar1_3_1_1
+	|	|	|	|-- adresar1_3_1_2
+	|	|	|
+	|	|	|-- soubor4.txt
+	|	|
+	|	|-- adresar1_4
+	|		|-- soubor5.txt
+	|
+	|-- adresar2
+		|-- soubor6.txt
+		|-- soubor7.txt
+
+
+----------------------------------------------------
+
+Vytvořte adresářovou strukturu se soubory dle schéma výše. 
+soubor2.txt --> oprávnění majitel vše, skupina čtení a psaní, ostatní čtení
+soubor3.txt --> oprávnění majitel čtení a psaní, skupina čtení,  ostatní spouštění
+soubor4.txt --> udělejte z něj skrytý soubor s oprávněními majitel čtení a psaní, skupina psaní, ostatní psaní a spouštění
+
+Poté spusťte program "kontrolka", ten Vám úlohy zkontroluje a vypíše případné chyby.

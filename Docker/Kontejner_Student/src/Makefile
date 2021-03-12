@@ -1,4 +1,8 @@
-all: checker print_me
+all: kontrolka ukladatko print_me
 
-checker: checker.c
+kontrolka: kontrolka.c
+ukladatko: ukladatko.c
 print_me: print_me.c
+
+clean:
+	rm -f kontrolka ukladatko print_me
