@@ -77,7 +77,7 @@ int main()
 
   files[5][0] = "cat ";
   files[5][1] = "/home/eidam/kyber/uloha6.txt";
-  files[5][2] = "dig +short bezpecnost.ssps.cz";
+  files[5][2] = "dig +short hackdays.eu";
 
   int filesLength = sizeof(files) / sizeof(files[0]);
   char filecmd[1048];
