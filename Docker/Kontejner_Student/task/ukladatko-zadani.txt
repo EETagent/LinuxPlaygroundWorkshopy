@@ -14,8 +14,8 @@
 uloha1.txt -> UID přihlášeného uživatele
 uloha2.txt -> Output programu "print_me"
 uloha3.txt -> Hostname virtuálního počítače
-uloha4.txt -> Obsah vzdáleného souboru https://kraky.ml/curl.txt
-uloha5.txt -> Vlajka (ve formátu "KBB{<kód>}") ukrytá ve vzdáleném souboru https://kraky.ml/Kalistosaurus.mp3
-uloha6.txt -> IP adresa na kterou směřuje doména "bezpecnost.ssps.cz"
+uloha4.txt -> Obsah vzdáleného souboru https://hackdays.eu/curl.txt
+uloha5.txt -> Vlajka (ve formátu "KBB{<kód>}") ukrytá ve vzdáleném souboru https://hackdays.eu/Kalistosaurus.mp3
+uloha6.txt -> IP adresa na kterou směřuje doména "hackdays.eu"
 
 Poté spusťte program "ukladatko", ten Vám úlohy zkontroluje a vypíše případné chyby.
