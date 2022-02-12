@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <dirent.h>
+#include <errno.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #define BUFSIZE 128
@@ -22,11 +23,18 @@ int f_exists(const char *fname)
 int dir_exists(const char *dirname)
 {
 	struct stat dirs;
-	stat(dirname, &dirs);
-	if (S_ISDIR(dirs.st_mode))
+	if (stat(dirname, &dirs) == 0 && S_ISDIR(dirs.st_mode))
 	{
-		return 0;
-	}
+		DIR* dir = opendir(dirname);
+		if (dir)
+		{
+			closedir(dir);
+			return 0;
+		} else if (ENOENT == errno)
+		{
+			return 1;
+		}
+	} 
 	else
 	{
 		return 1;
